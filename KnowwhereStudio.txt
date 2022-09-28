@@ -1,0 +1,21 @@
+function print1To100(sizeofArray) {
+    
+    let arr = new Array(sizeofArray).fill(1)
+    
+    arr.forEach((num, i) =>  checkNum(i+1) )
+
+}
+
+function checkNum(i) {
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+        console.log('FizzBuzz');
+    } else if (i % 3 === 0) {
+        console.log('Fizz');
+    } else if (i % 5 === 0) {
+        console.log('Buzz');
+    } else {
+        console.log(i);
+    }
+}
+
+print1To100(100);
